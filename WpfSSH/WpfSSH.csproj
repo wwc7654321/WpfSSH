@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <StartupObject>WpfSSH.App</StartupObject>
+	<FileVersion>0.1.0</FileVersion>
+    <InformationalVersion>0.1</InformationalVersion>
+    <IncludeSourceRevisionInInformationalVersion>true</IncludeSourceRevisionInInformationalVersion>
+
+    <!--<InformationalVersion Condition=" '%GITHEADVAR%' == '' ">0.1.0.1</InformationalVersion> 
+    <InformationalVersion Condition=" '%GITHEADVAR%' != '' ">0.1.1.$(GITHEADVAR)</InformationalVersion> -->
+    <!--<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>-->
+    <!-- FileVersion BUILD_BUILDNUMBER  GITVERSION_NuGetVersionV2-->
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="AvalonEdit" Version="6.3.0.90" />
+    <PackageReference Include="Core.Renci.SshNet" Version="2021.10.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Configuration" Version="8.0.0" />
+    <PackageReference Include="NLog" Version="5.3.2" />
+    <PackageReference Include="NLog.Extensions.Logging" Version="5.3.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="nlog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <!--<Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="Powershell -Command &quot;(Get-Content $(ProjectDir)AssemblyInfo.cs) | Foreach-Object { $_ -replace 'AssemblyFileVersion\(\&quot;[\d\.]+\&quot;\)', ('AssemblyFileVersion(\&quot;' + (Get-Date -Format &quot;yy.MM.dd&quot;) + '\&quot;)') } | Set-Content $(ProjectDir)AssemblyInfo.cs&quot;" />
+  </Target>-->
+
+</Project>

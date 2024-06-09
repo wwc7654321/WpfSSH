@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfSSH", "WpfSSH\WpfSSH.csproj", "{062E5733-E245-4957-B391-6EF144AC9B02}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{062E5733-E245-4957-B391-6EF144AC9B02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{062E5733-E245-4957-B391-6EF144AC9B02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{062E5733-E245-4957-B391-6EF144AC9B02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{062E5733-E245-4957-B391-6EF144AC9B02}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B67D75E7-A2F9-41CC-BFCE-AC4625269BCD}
+	EndGlobalSection
+EndGlobal
